@@ -1,0 +1,279 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'BMEULJIRO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.row {max-width: 768px; margin: 0px auto;}
+
+/* html, body {height: 200%;} */
+#mobile {
+    max-width: 768px;
+    margin: 0px auto;
+    /* height: 100%; */
+}
+
+/* 탑 메뉴----------------------------------------------------------------------------------------------------- */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 80px;
+    /* background: skyblue; */
+    border-bottom: 2px solid #000;
+}
+/* 아이콘 */
+#header > div i {
+    font-size: 25px;
+    margin-top: 20px;
+}
+/* 로고 */
+#header h1 {
+    font-size: 50px;
+}
+/* 클릭하면 나오는 메뉴------------------------------------------------------------------------------------- */
+.click-menu-box {
+    position: fixed; top: 0px; left: -100%; bottom: 0px; right: 0px;
+    background: #fff;
+    z-index: 999;
+    /* 바텀메뉴도 fixed인데 z-index: 99값임 */
+    display: none;
+}
+/* 클릭메뉴 탑 텍스트 */
+.click-menu-box .click-menu-txt {
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    height: 15%;
+}
+/* 슬로건 구역 */
+.click-menu-box .click-menu-txt h2 {
+    font-size: 40px; font-family: 'BMEULJIRO'; font-weight: normal;
+    padding: 20px 0px 10px 20px;
+    color: blue;
+}
+.click-menu-box .click-menu-txt h2 span {
+    color: #f00;
+}
+/* 로고박스 */
+.click-menu-box .click-menu-txt .click-txt-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px 0px 10px 20px;
+}
+.click-menu-box .click-menu-txt .click-txt-top a {
+    flex: 0.5;
+    padding: 0px 5px;
+}
+/* 석지훈님안녕하세요 박스 */
+.click-menu-box .click-menu-txt p {
+    /* padding: 10px 20px 0px; */
+    font-size: 20px;
+    flex: 9;
+}
+.click-menu-box .click-menu-txt p span {
+    font-size: 25px;
+    /* font-weight: bold; */
+    color: green;
+}
+/* 클릭메뉴의 내용------------------------------------------------------------------------------------------- */
+.click-menu-box .click-menu-nav {
+    height: 80%;
+    background: #fff;
+    
+}
+.click-menu-box .click-menu-nav ul {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border-bottom: 1px solid #ccc; */
+    place-items: center center;
+}
+.click-menu-box .click-menu-nav ul li {
+    text-align: center;
+    width: 60%; height: 80%;
+    font-size: 20px; font-weight: bold;
+    padding: 50px 0px;
+    border: 10px solid black; border-radius: 20px;
+    background: #fff;
+}
+.click-menu-box .click-menu-bottom {
+    height: 5%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px; font-weight: bold;
+    background: #333; color: #fff;
+}
+.click-menu-box .click-menu-bottom i {
+    /* color: #fff; */
+    padding: 0px 10px;
+}
+
+
+/* 메인페이지 내용------------------------------------------------------------------------------------ */
+.main-page {
+    background: url(../images/main-back.jpg) no-repeat;
+    background-size: cover; background-position: center;
+}
+.main-page #article {
+    background: rgba(255,255,255,0.5);
+    padding: 20px 0px;
+}
+/* 국민 예방 수칙 */
+.people {
+    margin: 0px auto 10px; padding: 40px 0px 20px; 
+    width: 90%;
+    background: rgba(255,0,0,0.5);
+    border-radius: 20px;
+}
+.people h2 {
+    /* text-align: center; */
+    font-size: 30px;
+    color: #fff;
+    padding: 0px 0px 5px 10px;
+}
+.people p {
+    font-size: 15px;
+    color: #fff;
+    padding: 0px 0px 30px 10px;
+}
+.people .people-box {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* place-items: center center; */
+}
+.people .people-box > div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+}
+.people .people-box .people-img {
+    text-align: center;
+}
+.people .people-txt ul {
+    list-style: disc;
+}
+.people .people-txt li {
+    font-size: 15px; font-weight: bold;
+    padding-bottom: 10px;
+    color: #0ff;
+}
+/* 유상증상자 예방수칙 */
+.similar {
+    margin: 0px auto; padding: 40px 0px 20px; 
+    width: 90%;
+    background: rgba(255,0,0,0.5);
+    border-radius: 20px;
+}
+.similar h2 {
+    /* text-align: center; */
+    font-size: 30px;
+    color: #fff;
+    padding: 0px 0px 5px 10px;
+}
+.similar p {
+    font-size: 15px;
+    color: #fff;
+    padding: 0px 0px 30px 10px;
+}
+.similar .similar-box {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* place-items: center center; */
+}
+.similar .similar-box > div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+}
+.similar .similar-box .similar-img {
+    text-align: center;
+}
+.similar .similar-txt ul {
+    list-style: disc;
+}
+.similar .similar-txt li {
+    font-size: 15px; font-weight: bold;
+    padding-bottom: 10px;
+    color: #0ff;
+}
+
+
+
+
+
+
+/* 바텀 메뉴--------------------------------------------------------------------------------------------- */
+#aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; top: 90%; bottom: 0px;
+    width: 100%; max-width: 768px;
+    padding: 0px 20px;
+    background: #fff;
+    z-index: 99;
+    border-top: 2px solid black;
+    /* display: none; */
+}
+/* 아이콘 */
+#aside > div i {
+    font-size: 30px;
+    /* margin-top: 15px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터------------------------------------------------------------------------------------------------- */
+#footer {
+    text-align: center;
+    margin-bottom: 92px;
+}
+/* 개인정보 구역 */
+#footer .privacy {
+    background: #000;
+    padding: 10px 0px;
+    display: flex;
+}
+#footer .privacy a {
+    color: #fff; background: #333;
+    width: 33.33%;
+    display: inline-block;
+    border-left: 1px solid #000; border-right: 1px solid #000;
+    padding: 5px 0px;
+    font-size: 12px;
+}
+/* 주소 구역 */
+#footer .address {
+    background: #000;
+    padding: 15px 0px 20px;
+}
+#footer .address p {
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+/* 카피라이트 구역 */
+#footer .copyright {
+    background: #ddd;
+    padding: 10px 0px;
+}
+#footer .copyright p {
+    color: #333;
+    font-size: 12px;
+}

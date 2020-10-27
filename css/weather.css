@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+
+
+
+#article {
+    
+}
+.weather-page {
+    background: rgba(39, 122, 216, 0.6);
+    color: #fff;
+}
+.dust-box {
+    text-align: center;
+    /* background: #b2cdff; */
+    padding: 20px 0px;
+    position: relative;
+}
+/* 현재위치 */
+.dust-box > h2 {
+    text-align: left;
+    padding-left: 10px;
+}
+/* 주소 */
+.dust-box > p {
+    text-align: left;
+    padding: 5px 0px 0px 10px;
+}
+/* 구름 이미지 */
+.dust-box img {
+    position: absolute; top: 0px; left: 70%;
+    height: 100%; width: 100%;
+    animation: weather1 20s infinite linear;
+}
+/* 미세먼지-------------------------------------------------------------------------------------------- */
+/* 미세먼지 텍스트 */
+.dust-box > h3 {
+    font-size: 40px;
+    padding: 30px 0px 50px;
+}
+/* 스마일 아이콘 박스들 */
+.dust-box > div {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+/* 스마일 아이콘 */
+.dust-box .smile i {
+    font-size: 50px;
+}
+.dust-box .smile div:nth-child(2) i {
+    color: blue;
+}
+/* 좋음 나쁨 상태 텍스트 */
+.dust-box .smile p {
+    font-size: 20px;
+    font-weight: normal;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+/* 주간 날씨---------------------------------------------------------------------------------------------- */
+.weather-box {
+    text-align: center;
+    padding: 50px 0px;
+    /* background: rgba(0, 119, 255, 0.6); */
+    position: relative;
+}
+/* 주간날씨 구름 */
+.weather-box img {
+    position: absolute; top: 30%; right: 100%;
+    /* height: 100%; */ width: 100%;
+    animation: weather2 25s infinite linear;
+}
+/* 주간날씨 온도 */
+.weather-box h2 {
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+/* 주간날씨 표 */
+.weather-box ul {
+    display: grid;
+    grid-template-columns: 11.66% 17.66% 17.66% 17.66% 17.66% 17.66%;
+    /* grid-template-rows: 33.33% 33.33% 33.33%; */
+    color: #fff;
+    font-size: 20px;
+    border-top: 1px solid #fff; border-bottom: 1px solid #fff;
+}
+.weather-box li {
+    padding: 50px 0px;
+}
+/* 최고,최저,오늘 텍스트 */
+.weather-box li:nth-child(1),
+.weather-box li:nth-child(4) {
+    font-weight: bold;
+}
+.weather-box li p {
+    /* border-bottom: 1px solid #fff; */
+    padding: 10px 0px;
+}
+/* 최저기온 */
+.weather-box li p:nth-of-type(2) {
+    color: gray;
+    
+}
+
+
+.weather-txt {
+    text-align: left;
+}
+.weather-txt > div {
+    border-bottom: 1px solid #fff;
+    padding: 20px 0px 20px 10px;
+}
+.weather-txt > div span {
+    color: gray;
+    font-weight: bold;
+}
+.weather-txt .etc > div {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+.weather-txt .etc > div p {
+    font-size: 25px;
+}

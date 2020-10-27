@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+
+
+
+.live-page #article {
+    padding: 20px 0px;
+}
+/* 상단 텍스트----------------------------------------------------------------------------------- */
+.live-txt {
+    padding: 0px 0px 30px 10px;
+}
+.live-txt h2 {
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.live-txt p {
+    font-size: 15px;
+}
+/* 국내현황/세계현황 버튼-------------------------------------------------------------------------- */
+.live .live-btn {
+    padding-left: 10px;
+}
+.live .live-btn button {
+    width: 100px; height: 30px;
+    background: #555; color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.live .live-btn button:last-child {
+    background: #ccc; color: #333;
+}
+/* 국내 환자 현황판-------------------------------------------------------------------------------- */
+.live .korea-live-number {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 30px 0px;
+}
+.live .korea-live-number > div {
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.live .korea-live-number > div:last-child {
+    border-right: none;
+}
+/* 국내 현황판 아이콘 */
+.live .korea-live-number > div i {
+    font-size: 35px;
+}
+/* 국내 현황판 숫자 */
+.live .korea-live-number > div p {
+    font-size: 30px;
+}
+/* 국내 현황판 텍스트 */
+.live .korea-live-number > div span {
+    font-size: 20px;
+}
+/* 세계 환자 현황판-------------------------------------------------------------------------------- */
+.live .world-live-number {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 30px 0px;
+    display: none;
+}
+.live .world-live-number > div {
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+.live .world-live-number > div:last-child {
+    border-right: none;
+}
+/* 세계 현황판 아이콘 */
+.live .world-live-number > div i {
+    font-size: 35px;
+}
+/* 세계 현황판 숫자 */
+.live .world-live-number > div p {
+    font-size: 30px;
+}
+/* 세계 현황판 텍스트 */
+.live .world-live-number > div span {
+    font-size: 20px;
+}
