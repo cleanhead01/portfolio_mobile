@@ -25,9 +25,8 @@
     align-items: center;
     padding: 0px 20px;
     height: 80px;
-    /* background: skyblue; */
     border-bottom: 2px solid gray;
-    background: #fff; color: darkslategrey;
+    background: #ddd; color: darkslategrey;
 }
 /* 아이콘 */
 #header > .search-box,
