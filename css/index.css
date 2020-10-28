@@ -26,7 +26,7 @@
     padding: 0px 20px;
     height: 80px;
     border-bottom: 2px solid gray;
-    background: #ddd; color: darkslategrey;
+    background: #fff; color: darkslategrey;
 }
 /* 아이콘 */
 #header > .search-box,

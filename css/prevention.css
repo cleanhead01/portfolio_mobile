@@ -10,7 +10,22 @@
 }
 .prevention-page #article {
     /* background: rgba(255,255,255,0.5); */
-    padding: 20px 0px;
+    padding: 0px 0px 20px;
+}
+.prevention-page #article .top-bar {
+    background: #ccc; color: #000;
+    width: 100%;
+    margin-bottom: 20px; padding: 10px 0px;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+}
+.prevention-page #article .top-bar div {
+    display: inline-block;
+    position: absolute; left: 20px;
+}
+.prevention-page #article .top-bar h2 {
+    display: inline-block;
 }
 /* 국민 예방 수칙 */
 .people {
