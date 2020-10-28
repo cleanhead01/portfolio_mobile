@@ -13,7 +13,7 @@
 }
 /* 상단 뒤로가기 메뉴랑 페이지 제목 */
 .weather-page #article .top-bar {
-    background: skyblue; color: #555;
+    background: rgba(255, 150, 255, 1); color: #fff;
     width: 100%;
     margin-bottom: 20px; padding: 10px 0px;
     text-align: center;
