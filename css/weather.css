@@ -11,6 +11,23 @@
     background: rgba(39, 122, 216, 0.6);
     color: #fff;
 }
+/* 상단 뒤로가기 메뉴랑 페이지 제목 */
+.weather-page #article .top-bar {
+    background: skyblue; color: #555;
+    width: 100%;
+    margin-bottom: 20px; padding: 10px 0px;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+}
+.weather-page #article .top-bar div {
+    display: inline-block;
+    position: absolute; left: 20px;
+}
+.weather-page #article .top-bar h2 {
+    display: inline-block;
+}
+/* 내용 시작 */
 .dust-box {
     text-align: center;
     /* background: #b2cdff; */

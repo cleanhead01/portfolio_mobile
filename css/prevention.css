@@ -12,6 +12,7 @@
     /* background: rgba(255,255,255,0.5); */
     padding: 0px 0px 20px;
 }
+/* 상단 뒤로가기 메뉴랑 페이지 제목 */
 .prevention-page #article .top-bar {
     background: #ccc; color: #000;
     width: 100%;
