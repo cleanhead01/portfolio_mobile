@@ -26,10 +26,12 @@
     padding: 0px 20px;
     height: 80px;
     /* background: skyblue; */
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid gray;
+    background: #fff; color: darkslategrey;
 }
 /* 아이콘 */
-#header > div i {
+#header > .search-box,
+#header > .alarm-box {
     font-size: 25px;
     margin-top: 20px;
 }
@@ -50,11 +52,12 @@
     border-bottom: 1px solid #ccc;
     background: #fff;
     height: 15%;
+    padding: 10px 0px 0px 10px;
 }
 /* 슬로건 구역 */
 .click-menu-box .click-menu-txt h2 {
     font-size: 40px; font-family: 'BMEULJIRO'; font-weight: normal;
-    padding: 20px 0px 10px 20px;
+    /* padding: 20px 0px 10px 20px; */
     color: blue;
 }
 .click-menu-box .click-menu-txt h2 span {
@@ -65,11 +68,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 10px 0px 10px 20px;
+    padding: 10px 0px;
 }
 .click-menu-box .click-menu-txt .click-txt-top a {
     flex: 0.5;
     padding: 0px 5px;
+    font-size: 25px;
 }
 /* 석지훈님안녕하세요 박스 */
 .click-menu-box .click-menu-txt p {
@@ -86,7 +90,6 @@
 .click-menu-box .click-menu-nav {
     height: 80%;
     background: #fff;
-    
 }
 .click-menu-box .click-menu-nav ul {
     height: 100%;
@@ -96,23 +99,27 @@
     place-items: center center;
 }
 .click-menu-box .click-menu-nav ul li {
-    text-align: center;
+    /* text-align: center; */
     width: 60%; height: 80%;
     font-size: 20px; font-weight: bold;
-    padding: 50px 0px;
     border: 10px solid black; border-radius: 20px;
     background: #fff;
+    position: relative;
+}
+.click-menu-box .click-menu-nav ul li a {
+    position: absolute; top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
 }
 .click-menu-box .click-menu-bottom {
     height: 5%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
     font-size: 20px; font-weight: bold;
+    padding: 10px 0px 0px 20px;
     background: #333; color: #fff;
 }
 .click-menu-box .click-menu-bottom i {
-    /* color: #fff; */
+    font-size: 25px;
     padding: 0px 10px;
 }
 
@@ -132,9 +139,9 @@
     position: fixed; top: 90%; bottom: 0px;
     width: 100%; max-width: 768px;
     padding: 0px 20px;
-    background: #fff;
+    background: #fff; color: darkslategrey;
     z-index: 99;
-    border-top: 2px solid black;
+    border-top: 2px solid gray;
     /* display: none; */
 }
 /* 아이콘 */

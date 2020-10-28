@@ -4,29 +4,31 @@
 
 /* 예방법 페이지 내용------------------------------------------------------------------------------------ */
 .prevention-page {
-    background: url(../images/main-back.jpg) no-repeat;
-    background-size: cover; background-position: center;
+    /* background: url(../images/main-back.jpg) no-repeat; */
+    /* background-size: cover; background-position: center; */
+    background: #ddd;
 }
 .prevention-page #article {
-    background: rgba(255,255,255,0.5);
+    /* background: rgba(255,255,255,0.5); */
     padding: 20px 0px;
 }
 /* 국민 예방 수칙 */
 .people {
     margin: 0px auto 10px; padding: 40px 0px 20px; 
     width: 90%;
-    background: rgba(255,0,0,0.5);
+    background: rgba(255,255,255,0.8);
+    box-shadow: 5px 5px 3px gray;
     border-radius: 20px;
 }
 .people h2 {
     /* text-align: center; */
     font-size: 30px;
-    color: #fff;
+    /* color: #fff; */
     padding: 0px 0px 5px 10px;
 }
 .people p {
     font-size: 15px;
-    color: #fff;
+    /* color: #fff; */
     padding: 0px 0px 30px 10px;
 }
 .people .people-box {
@@ -42,30 +44,35 @@
 .people .people-box .people-img {
     text-align: center;
 }
+.people .people-box .people-img img {
+    border-radius: 50%;
+    width: 200px;
+}
 .people .people-txt ul {
-    list-style: disc;
+    list-style: disc;    
 }
 .people .people-txt li {
     font-size: 15px; font-weight: bold;
     padding-bottom: 10px;
-    color: #0ff;
+    /* color: #0ff; */
 }
 /* 유상증상자 예방수칙 */
 .similar {
     margin: 0px auto; padding: 40px 0px 20px; 
     width: 90%;
-    background: rgba(255,0,0,0.5);
+    background: rgba(255,255,255,0.8);
+    box-shadow: 5px 5px 3px gray;
     border-radius: 20px;
 }
 .similar h2 {
     /* text-align: center; */
     font-size: 30px;
-    color: #fff;
+    /* color: #fff; */
     padding: 0px 0px 5px 10px;
 }
 .similar p {
     font-size: 15px;
-    color: #fff;
+    /* color: #fff; */
     padding: 0px 0px 30px 10px;
 }
 .similar .similar-box {
@@ -81,11 +88,14 @@
 .similar .similar-box .similar-img {
     text-align: center;
 }
+.similar .similar-box .similar-img img {
+    border-radius: 50%;
+}
 .similar .similar-txt ul {
     list-style: disc;
 }
 .similar .similar-txt li {
     font-size: 15px; font-weight: bold;
     padding-bottom: 10px;
-    color: #0ff;
+    /* color: #0ff; */
 }
