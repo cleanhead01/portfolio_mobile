@@ -40,9 +40,9 @@
     })
 
     // 메인페이지 한줄광고문구 위로 슬라이딩 시키기
-    setInterval(ddong, 3000)
+    setInterval(advertising, 3000)
 
-    function ddong() {
+    function advertising() {
         $('.main-page .main-noti a').eq(0).stop().animate({ // eq(0)은 첫번째 a
         marginTop : '-50px'
         }, 500, function(){
