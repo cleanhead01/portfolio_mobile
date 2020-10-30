@@ -131,6 +131,26 @@
 
 
 
+.main-page .main-noti {
+    position: relative;
+    height: 50px; line-height: 50px;
+    background: #3b1dcd; color: #fff;
+    overflow: hidden;
+}
+.main-page .main-noti::before {
+    content: "\f12a"; font-family: 'Font Awesome 5 Free'; font-weight: 900 !important;
+    padding-left: 20px;
+    position: absolute; left: 0px;
+    font-size: 20px;
+}
+.main-page .main-noti a {
+    display: block;
+    font-weight: bold;
+    padding-left: 40px;
+}
+
+
+
 
 
 

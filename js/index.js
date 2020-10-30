@@ -2,6 +2,7 @@
 
 
     $('#mobile').on('click','#aside a, .click-menu-box .click-menu-nav a', function(){
+        // e.preventDefault()
         var url = $(this).attr('href')
         $('#container-box > .container').remove()
         $('#container-box').load(url + ' .container')
@@ -10,12 +11,14 @@
 
     // 클릭메뉴에 메뉴 누르면 메뉴창 사라지기
     $('#header .click-menu-box a').on('click', function(){
+        // e.preventDefault()   상황에 따라 리턴펄스랑 프리벤트를 적절하게 써야한다.
         $(this).parents('.click-menu-box').hide()
-        return false
+        // return false
     })
     
     // 하단 메뉴의 햄버거 버튼 누르면 좌측에서 메뉴창 열리기
     $('#aside #menu-box a').on('click', function(){
+        // e.preventDefault()
         $('#header .click-menu-box').css({
             display : "block"
         }).animate({
@@ -35,6 +38,19 @@
         })
         return false
     })
+
+    // 메인페이지 한줄광고문구 위로 슬라이딩 시키기
+    setInterval(ddong, 3000)
+
+    function ddong() {
+        $('.main-page .main-noti a').eq(0).stop().animate({ // eq(0)은 첫번째 a
+        marginTop : '-50px'
+        }, 500, function(){
+            $(this).appendTo('.main-page .main-noti').css({
+                marginTop : '0px'
+            })
+        })
+    }
 
 
     // 메인페이지 슬라이드
