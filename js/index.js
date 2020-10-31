@@ -1,7 +1,7 @@
 (function($){
 
 
-    $('#mobile').on('click','#aside a, .click-menu-box .click-menu-nav a', function(){
+    $('#mobile #aside a, .click-menu-box .click-menu-nav a').on('click', function(){
         // e.preventDefault()
         var url = $(this).attr('href')
         $('#container-box > .container').remove()
@@ -85,6 +85,14 @@
         return false
     })
 
+
+        
+    
+ 
+ 
+ 
+ 
+ 
 
 
 

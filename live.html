@@ -1,61 +1,100 @@
-<div id="container-box">
-    <section id="section" class="container live-page">
-        <article id="article">
-            <div class="top-bar">
-                <div class="prev">
-                    <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+</head>
+<body>
+    <div id="container-box">
+        <section id="section" class="container live-page">
+            <article id="article">
+                <div class="top-bar">
+                    <div class="prev">
+                        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+                    </div>
+                    <h2>코로나 현황판</h2>
                 </div>
-                <h2>코로나 현황판</h2>
-            </div>
-            <div class="live-txt">
-                <p><i class="fas fa-map-marker-alt"></i> 서울시 중랑구 망우동</p>
-                <p>마지막 업데이트 : 2020-10-26. 15:57</p>
-            </div>
-            <div class="live">
-                <div class="live-btn">
-                    <button>국내 현황</button>
-                    <button>세계 현황</button>
+                <div class="live-txt">
+                    <p><i class="fas fa-map-marker-alt"></i> 서울시 중랑구 망우동</p>
+                    <p>마지막 업데이트 : 2020-10-26. 15:57</p>
                 </div>
-                <div class="korea-live-number">
-                    <div>
-                        <i class="fas fa-bed"></i>
-                        <p>25,955</p>
-                        <span>확진환자</span>
+                <div class="live">
+                    <div class="live-btn">
+                        <button>국내 현황</button>
+                        <button>세계 현황</button>
                     </div>
-                    <div>
-                        <i class="fas fa-thermometer-half"></i>
-                        <p>20,763</p>
-                        <span>검사중</span>
+                    <div class="korea-live-number">
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>25,955</p>
+                            <span>확진환자</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-thermometer-half"></i>
+                            <p>20,763</p>
+                            <span>검사중</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-child"></i>
+                            <p>23,905</p>
+                            <span>격리해제</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-skull-crossbones"></i>
+                            <p>457</p>
+                            <span>사망자</span>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fas fa-child"></i>
-                        <p>23,905</p>
-                        <span>격리해제</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-skull-crossbones"></i>
-                        <p>457</p>
-                        <span>사망자</span>
+                    <div class="world-live-number">
+                        <div>
+                            <i class="fas fa-bed"></i>
+                            <p>42,964,068</p>
+                            <span>확진환자</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-skull-crossbones"></i>
+                            <p>1,153,166</p>
+                            <span>사망자</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-globe-asia"></i>
+                            <p>219</p>
+                            <span>발생국가ㆍ영토</span>
+                        </div>
                     </div>
                 </div>
-                <div class="world-live-number">
-                    <div>
-                        <i class="fas fa-bed"></i>
-                        <p>42,964,068</p>
-                        <span>확진환자</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-skull-crossbones"></i>
-                        <p>1,153,166</p>
-                        <span>사망자</span>
-                    </div>
-                    <div>
-                        <i class="fas fa-globe-asia"></i>
-                        <p>219</p>
-                        <span>발생국가ㆍ영토</span>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </section>
-</div>
+                <canvas id="line-chart"></canvas>
+            </article>
+        </section>
+    </div>
+    
+    <script>
+        (function($){
+            
+           var myChart = $('#line-chart');
+           var myLineChart = new Chart(myChart, {
+               type : 'line',
+               data : {
+                   labels : [
+                       '1월', '2월', '3월', '4월', '5월'
+                   ],
+                   datasets : [{
+                       label : '2019',
+                       data : [10,8,6,5,12]
+                   }]
+               }
+           });
+    
+    
+    
+    
+    
+        })(jQuery)
+        
+    
+    </script>
+</body>
+</html>
