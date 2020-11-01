@@ -1,7 +1,10 @@
 (function($){
 
 
-    $('#mobile #aside a, .click-menu-box .click-menu-nav a').on('click', function(){
+    // 선생님 여기요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    // 여기 return false를 주석처리하면 차트가 나오는데 css가 깨지면서 나오고
+    // return false를 넣으면 차트가 안나와요ㅜㅜ
+    $('#aside > div > a, .click-menu-box .click-menu-nav a').on('click', function(){
         // e.preventDefault()
         var url = $(this).attr('href')
         $('#container-box > .container').remove()
