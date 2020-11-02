@@ -41,11 +41,16 @@
 }
 /* 클릭하면 나오는 메뉴------------------------------------------------------------------------------------- */
 .click-menu-box {
-    position: fixed; top: 0px; left: -100%; bottom: 0px; right: 0px;
-    background: #fff;
+    position: fixed; top: 0px; left: -100%; bottom: 0px;
+    width: 100%;
+    background : #000;
     z-index: 999;
     /* 바텀메뉴도 fixed인데 z-index: 99값임 */
-    display: none;
+    /* display: none; */
+    overflow: hidden;
+}
+.click-menu-box.on {
+    display: block;
 }
 /* 클릭메뉴 탑 텍스트 */
 .click-menu-box .click-menu-txt {
@@ -130,7 +135,7 @@
 
 
 
-
+/* 한줄광고----------------------------------------------------------------------------------------- */
 .main-page .main-noti {
     position: relative;
     height: 50px; line-height: 50px;
@@ -155,7 +160,7 @@
 
 
 
-
+/* 메인페이지 슬라이드 구역-------------------------------------------------------------------------------- */
 .main-page #article .slide-outer {
     height: 500px;
 }
@@ -202,6 +207,9 @@
 
 
 /* 메인페이지 텍스트 구역 시작------------------------------------------------------------------------------ */
+.main-page #article .main-txt-box {
+    padding: 20px 0px 30px;
+}
 .main-page #article .main-txt-box > h2 {
     text-align: center;
     font-size: 30px;
@@ -273,7 +281,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed; top: 90%; bottom: 0px;
-    width: 100%; max-width: 768px;
+    width: 100%; max-width: 768px; min-height: 92px;
     padding: 0px 20px;
     background: #fff; color: darkslategrey;
     z-index: 99;
@@ -333,4 +341,21 @@
 #footer .copyright p {
     color: #333;
     font-size: 12px;
+}
+
+
+
+
+#onlyMobile {
+    position:fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
+    z-index:9999999999;
+    background:#4ab8bc;
+    font-size:30px; 
+    display:flex;
+    justify-content: center; align-items:center;
+}
+@media screen and (max-width:768px ) {
+    #onlyMobile {
+        display:none;
+    }   
 }

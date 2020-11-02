@@ -12,35 +12,38 @@
         return false
     })
 
+    
+    // 하단 메뉴의 햄버거 버튼 누르면 좌측에서 메뉴창 열리기
+    $('#aside #menu-box a').on('click', function(){
+        // e.preventDefault()
+        $('.click-menu-box').addClass('on')
+        $('#header .click-menu-box').animate({
+            left : "0%"
+        }, 500)
+        return false
+    })
+
+
+    // 메뉴창의 X버튼을 누르면 다시 화면으로 넘어가기
+    $('#header .click-menu-box .click-menu-txt .close').on('click', function(){
+        // e.preventDefault()
+        $('#header .click-menu-box').animate({
+            left : "-100%"
+        }, 500, function(){
+            $('.click-menu-box').removeClass('on')
+        })
+        return false
+        // 현재오류 : X버튼 누르고 다시 햄버거 메뉴 누르면 안나옴
+    })
+
+
     // 클릭메뉴에 메뉴 누르면 메뉴창 사라지기
     $('#header .click-menu-box a').on('click', function(){
         // e.preventDefault()   상황에 따라 리턴펄스랑 프리벤트를 적절하게 써야한다.
         $(this).parents('.click-menu-box').hide()
         // return false
     })
-    
-    // 하단 메뉴의 햄버거 버튼 누르면 좌측에서 메뉴창 열리기
-    $('#aside #menu-box a').on('click', function(){
-        // e.preventDefault()
-        $('#header .click-menu-box').css({
-            display : "block"
-        }).animate({
-            left : "0%"
-        }, 500)
-        return false
-    })
 
-    // 메뉴창의 X버튼을 누르면 다시 메인화면으로 넘어가기
-    $('#header .click-menu-box .click-menu-txt .close').on('click', function(){
-        $('#header .click-menu-box').animate({
-            left : "-100%"
-        }, 500, function(){
-            $(this).css({
-                display : "none"
-            })
-        })
-        return false
-    })
 
     // 메인페이지 한줄광고문구 위로 슬라이딩 시키기
     setInterval(advertising, 3000)

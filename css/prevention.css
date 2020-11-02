@@ -106,6 +106,7 @@
 }
 .similar .similar-box .similar-img img {
     border-radius: 50%;
+    width: 200px; height: 200px;
 }
 .similar .similar-txt ul {
     list-style: disc;
