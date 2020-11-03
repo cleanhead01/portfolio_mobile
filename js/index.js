@@ -24,8 +24,8 @@
     })
 
 
-    // 메뉴창의 X버튼을 누르면 다시 화면으로 넘어가기
-    $('#header .click-menu-box .click-menu-txt .close').on('click', function(){
+    // 메뉴창의 a 태그를 누르면 다시 화면으로 넘어가기
+    $('#header .click-menu-box a').on('click', function(){
         // e.preventDefault()
         $('#header .click-menu-box').animate({
             left : "-100%"
@@ -37,12 +37,12 @@
     })
 
 
-    // 클릭메뉴에 메뉴 누르면 메뉴창 사라지기
-    $('#header .click-menu-box a').on('click', function(){
-        // e.preventDefault()   상황에 따라 리턴펄스랑 프리벤트를 적절하게 써야한다.
-        $(this).parents('.click-menu-box').hide()
-        // return false
-    })
+    // // 클릭메뉴에 메뉴 누르면 메뉴창 사라지기    x버튼 누르면 메뉴박스 나가는 이벤트랑 곂쳐서 불편함
+    // $('#header .click-menu-box a').on('click', function(){
+    //     // e.preventDefault()   상황에 따라 리턴펄스랑 프리벤트를 적절하게 써야한다.
+    //     $(this).parents('.click-menu-box').hide()
+    //     // return false
+    // })
 
 
     // 메인페이지 한줄광고문구 위로 슬라이딩 시키기

@@ -66,13 +66,13 @@
 .dust-box .smile i {
     font-size: 50px;
 }
-.dust-box .smile div:nth-child(2) i {
+.dust-box .smile div:nth-child(2) {
     color: blue;
 }
 /* 좋음 나쁨 상태 텍스트 */
 .dust-box .smile p {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
     padding-top: 20px;
 }
 
