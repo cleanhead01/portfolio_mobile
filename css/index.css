@@ -162,35 +162,29 @@
 
 /* 메인페이지 슬라이드 구역-------------------------------------------------------------------------------- */
 .main-page #article .slide-outer {
-    height: 500px;
+    height: 400px;
 }
 .main-page #article .slide-box {
     /* width: 100%; height: 768px;
     overflow: hidden; */
 }
 .main-page #article .slide {
-    height: 500px;
+    height: 400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .main-page #article .slide1 {
-    background: url(../images/Untitled-1.jpg);
+    background: url(../images/slide1.jpg);
 }
 .main-page #article .slide2 {
-    background: url(../images/Untitled-2.jpg);
+    background: url(../images/slide2.jpg);
 }
 .main-page #article .slide3 {
-    background: url(../images/Untitled-3.jpg);
+    background: url(../images/slide3.jpg);
 }
 .main-page #article .slide4 {
-    background: url(../images/Untitled-4.jpg);
-}
-.main-page #article .slide5 {
-    background: url(../images/Untitled-5.jpg);
-}
-.main-page #article .slide6 {
-    background: url(../images/Untitled-6.jpg);
+    background: url(../images/slide4.jpg);
 }
 
 
