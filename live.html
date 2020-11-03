@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     </div>
-                    <canvas id="line-chart" width="30" height="30"></canvas>
+                    <div class="canvas"><canvas id="line-chart" width="10vw" height="5vh"></canvas></div>
                 </article>
             </section>
         </div>
@@ -178,9 +178,28 @@
                     '10.15(일)', '10.16(월)', '10.17(화)', '10.18(수)', '10.19(목)', '10.20(금)', '10.21(토)', '10.22(일)', '10.23(월)', '10.24(화)'
                    ],
                    datasets : [{
-                    label : '2020',
-                    data : [138,152,98,82,110,76,99,155,77,61]
-                   }]
+                    label : '국내발생',
+                    data : [138,152,98,82,110,76,99,155,77,61],
+                    backgroundColor : 'rgba(144,238,144,0.3)',
+                    borderColor : 'rgba(144,238,144,1)',
+                    borderWidth : 2,
+                    pointRadius : 3,
+                    pointHoverRadius : 5,
+                    pointBorderColor : 'green',
+                    pointBackgroundColor : 'green',
+                   },
+                   {
+                    label : '해외유입',
+                    data : [20,13,5,8,22,16,1,30,12,6],
+                    backgroundColor : 'rgba(0,0,255,0.3)',
+                    borderColor : 'rgba(0,0,255,1)',
+                    borderWidth : 2,
+                    pointRadius : 3,
+                    pointHoverRadius : 5,
+                    pointBorderColor : 'blue',
+                    pointBackgroundColor : 'blue',
+                   }
+                ]
                }
            });
             

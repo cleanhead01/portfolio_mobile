@@ -1,7 +1,7 @@
 (function($){
 
 
-    
+    // 사이드메뉴와 클릭메뉴의 로드메서드를 넣지만 확진자 현황은 새로운 html이 열려야 해서 따로 지목을 한다.
     $('#aside > div > a, .click-menu-box .click-menu-nav li > a').on('click', function(){
         // e.preventDefault()
         var url = $(this).attr('href')
@@ -22,8 +22,8 @@
     })
 
 
-    // 메뉴창의 a 태그를 누르면 다시 화면으로 넘어가기
-    $('#header .click-menu-box a').on('click', function(){
+    // 메뉴창의 a 태그를 누르면 다시 화면으로 넘어가기(확진자 현황은 새로운 html로 넘어가야해서 각각 지목을 한다.)
+    $('#header .click-menu-box .click-menu-nav li > a, .click-txt-top a, .click-menu-bottom a').on('click', function(){
         // e.preventDefault()
         $('#header .click-menu-box').animate({
             left : "-100%"
@@ -31,16 +31,7 @@
             $('.click-menu-box').removeClass('on')
         })
         return false
-        // 현재오류 : X버튼 누르고 다시 햄버거 메뉴 누르면 안나옴
     })
-
-
-    // // 클릭메뉴에 메뉴 누르면 메뉴창 사라지기    x버튼 누르면 메뉴박스 나가는 이벤트랑 곂쳐서 불편함
-    // $('#header .click-menu-box a').on('click', function(){
-    //     // e.preventDefault()   상황에 따라 리턴펄스랑 프리벤트를 적절하게 써야한다.
-    //     $(this).parents('.click-menu-box').hide()
-    //     // return false
-    // })
 
 
     // 메인페이지 한줄광고문구 위로 슬라이딩 시키기
@@ -84,14 +75,14 @@
 
         if ($(this).hasClass('fa-angle-down')) {
             $(this).removeClass('fa-angle-down').addClass('fa-angle-up')    
-        } else {
+        } else if ($(this).hasClass('fa-angle-up')) {
             $(this).removeClass('fa-angle-up').addClass('fa-angle-down')    
         }
         
         $(this).parent().siblings('.main-title').next().each(function(){
             if ( $(this).css('display') === 'block' ) {
                 $(this).slideUp(300)
-                $(this).siblings('.main-title').find('i').removeClass('fa-angle-up').addClass('fa-angle-down')
+                $(this).prev().find('i').removeClass('fa-angle-up').addClass('fa-angle-down')
             }
         })
         return false
