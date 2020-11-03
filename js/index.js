@@ -1,10 +1,8 @@
 (function($){
 
 
-    // 선생님 여기요!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // 여기 return false를 주석처리하면 차트가 나오는데 css가 깨지면서 나오고
-    // return false를 넣으면 차트가 안나와요ㅜㅜ
-    $('#aside > div > a, .click-menu-box .click-menu-nav a').on('click', function(){
+    
+    $('#aside > div > a, .click-menu-box .click-menu-nav li > a').on('click', function(){
         // e.preventDefault()
         var url = $(this).attr('href')
         $('#container-box > .container').remove()
@@ -81,11 +79,19 @@
     // 메인페이지 아코디언 액션
     $('.main-content').hide()
 
-    $('.main-title').on('click', function(){
-        $(this).next().stop().slideToggle(300)
-        $(this).siblings('.main-title').next().each(function(){
+    $('.main-title i').on('click', function(){
+        $(this).parent('.main-title').next().stop().slideToggle(300)
+
+        if ($(this).hasClass('fa-angle-down')) {
+            $(this).removeClass('fa-angle-down').addClass('fa-angle-up')    
+        } else {
+            $(this).removeClass('fa-angle-up').addClass('fa-angle-down')    
+        }
+        
+        $(this).parent().siblings('.main-title').next().each(function(){
             if ( $(this).css('display') === 'block' ) {
                 $(this).slideUp(300)
+                $(this).siblings('.main-title').find('i').removeClass('fa-angle-up').addClass('fa-angle-down')
             }
         })
         return false
