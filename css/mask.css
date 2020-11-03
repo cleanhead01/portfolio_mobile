@@ -31,15 +31,14 @@
 }
 .mask-page .content > div {
     display: inline-block;
-    width: 40%; height: 500px;
+    width: 40%; min-height: 377px;
     margin: 10px 10px 20px 10px; padding: 10px;
-    border: 1px solid #ccc;
     vertical-align: top;
     transition: all 0.5s;
 }
 .mask-page .content > div:hover {
     display: inline-block;
-    width: 40%; height: 500px;
+    width: 40%; min-height: 377px;
     margin: 10px 10px 20px 10px; padding: 10px;
     vertical-align: top;
     box-shadow: 1px 3px 5px 3px gray;

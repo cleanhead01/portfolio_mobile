@@ -33,7 +33,7 @@
 #header > .search-box,
 #header > .alarm-box {
     font-size: 25px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 /* 로고 */
 #header h1 {
