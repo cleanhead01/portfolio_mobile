@@ -72,11 +72,11 @@
                         <p><i class="fas fa-map-marker-alt"></i> 서울시 중랑구 망우동</p>
                         <p>마지막 업데이트 : 2020-10-26. 15:57</p>
                     </div>
+                    <div class="live-btn">
+                        <button type="button" class="on">국내 현황</button>
+                        <button type="button">세계 현황</button>
+                    </div>
                     <div class="live">
-                        <div class="live-btn">
-                            <button type="button">국내 현황</button>
-                            <button type="button">세계 현황</button>
-                        </div>
                         <div class="korea-live-number">
                             <div>
                                 <i class="fas fa-bed"></i>
@@ -174,60 +174,79 @@
 
 <script>
     (function($){
-            
-            var myChartK = $('#line-chart-korea');
-            var myChartW = $('#line-chart-world');
-            var myLineChart = new Chart(myChartK, {
-                type : 'line',
-                data : {
-                    labels : [
-                        '10.18(수)', '10.19(목)', '10.20(금)', '10.21(토)', '10.22(일)', '10.23(월)', '10.24(화)'
-                    ],
-                    datasets : [{
-                        label : '국내발생',
-                        data : [82,110,76,99,155,77,61],
-                        backgroundColor : 'rgba(144,238,144,0.3)',
-                        borderColor : 'rgba(144,238,144,1)',
-                        borderWidth : 2,
-                        pointRadius : 3,
-                        pointHoverRadius : 5,
-                        pointBorderColor : 'green',
-                        pointBackgroundColor : 'green',
-                    },
-                    {
-                        label : '해외유입',
-                        data : [8,22,16,1,30,12,6],
-                        backgroundColor : 'rgba(0,0,255,0.3)',
-                        borderColor : 'rgba(0,0,255,1)',
-                        borderWidth : 2,
-                        pointRadius : 3,
-                        pointHoverRadius : 5,
-                        pointBorderColor : 'blue',
-                        pointBackgroundColor : 'blue',
-                    }
-                    ]
-                }
-            });
 
-            var myLineChart = new Chart(myChartW, {
-                type : 'line',
-                data : {
-                    labels : [
-                        '3.22(일)', '5.13(수)', '7.4(토)', '8.25(화)', '10.17(토)'
-                    ],
-                    datasets : [{
-                        label : '일일발생',
-                        data : [26.064,81.576,212.319,206.382,432.009],
-                        backgroundColor : 'rgba(144,238,144,0.3)',
-                        borderColor : 'rgba(144,238,144,1)',
-                        borderWidth : 2,
-                        pointRadius : 3,
-                        pointHoverRadius : 5,
-                        pointBorderColor : 'green',
-                        pointBackgroundColor : 'green',
-                    }]
+        $('.live .world-live-number').hide()
+        // display:grid를 써놔서 display:none이 중복이 안되기 때문에 hide를 시켜놓는다.
+        $('.live-btn button').on('click', function(){
+            var index = $(this).index()
+            $(this).addClass('on').siblings().removeClass('on')
+            $('.live > div').eq(index).fadeIn(100)
+            .siblings().fadeOut(100)
+        })
+            
+        var myChartK = $('#line-chart-korea');
+        var myChartW = $('#line-chart-world');
+        var myLineChart = new Chart(myChartK, {
+            type : 'line',
+            data : {
+                labels : [
+                    '10.18(수)', '10.19(목)', '10.20(금)', '10.21(토)', '10.22(일)', '10.23(월)', '10.24(화)'
+                ],
+                datasets : [{
+                    label : '국내발생',
+                    data : [82,110,76,99,155,77,61],
+                    backgroundColor : 'rgba(144,238,144,0.3)',
+                    borderColor : 'rgba(144,238,144,1)',
+                    borderWidth : 2,
+                    pointRadius : 3,
+                    pointHoverRadius : 5,
+                    pointBorderColor : 'green',
+                    pointBackgroundColor : 'green',
+                },
+                {
+                    label : '해외유입',
+                    data : [8,22,16,1,30,12,6],
+                    backgroundColor : 'rgba(0,0,255,0.3)',
+                    borderColor : 'rgba(0,0,255,1)',
+                    borderWidth : 2,
+                    pointRadius : 3,
+                    pointHoverRadius : 5,
+                    pointBorderColor : 'blue',
+                    pointBackgroundColor : 'blue',
                 }
-            });
+                ]
+            },
+            options : {
+                title : {display : false, text : '국내현황', fontSize : 30, fonsColor : 'black'},
+                legend : {display : true, position : 'top'},
+                // scales : {yAxes : [{ticks : {min:0, max:500}}]}
+            }
+        });
+
+        var myLineChart = new Chart(myChartW, {
+            type : 'line',
+            data : {
+                labels : [
+                    '3.22(일)', '5.13(수)', '7.4(토)', '8.25(화)', '10.17(토)'
+                ],
+                datasets : [{
+                    label : '일일발생',
+                    data : ['26064','81576','212319','206382','432009'],
+                    backgroundColor : 'rgba(144,238,144,0.3)',
+                    borderColor : 'rgba(144,238,144,1)',
+                    borderWidth : 2,
+                    pointRadius : 3,
+                    pointHoverRadius : 5,
+                    pointBorderColor : 'green',
+                    pointBackgroundColor : 'green',
+                }]
+            },
+            options : {
+                title : {display : false, text : '국내현황', fontSize : 30, fonsColor : 'black'},
+                legend : {display : true, position : 'top'},
+                scales : {yAxes : [{ticks : {min:0, max:450000}}]}
+            }
+        });
             
           
           
