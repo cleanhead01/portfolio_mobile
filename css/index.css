@@ -214,18 +214,14 @@
     border: 1px solid #bbb; border-radius: 20px;
     background: #fff;
 }
-.main-page #article .main-txt-box .main-txt .main-title.on {
-    background: #555;
-    color: #fff;
-}
 .main-page #article .main-txt-box .main-txt .main-title.on h3 {
-    color: #555;
+    color: #fff;
 }
 /* 제목 */
 .main-page #article .main-txt-box .main-txt .main-title h3 {
     display: inline-block;
     width: 90%;
-    color: #555;
+    color: #777;
     font-weight: bold;
 }
 /* 오른쪽 화살표 */
@@ -233,7 +229,7 @@
     display: inline-block;
     padding-left: 10px;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 25px; color: #000;
 }
 
 /* 메인페이지 내용---------------------------------------------------------------------------------------- */
@@ -254,6 +250,7 @@
 .main-page #article .main-txt-box .main-txt .main-content a {
     display: inline-block;
     padding-left: 0px;
+    color: #555;
 }
 /* 내용의 이미지 */
 .main-page #article .main-txt-box .main-txt .main-content img {
