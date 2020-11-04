@@ -164,12 +164,11 @@
 
 /* 메인페이지 슬라이드 구역-------------------------------------------------------------------------------- */
 .main-page #article .slide-outer {
-    height: 400px;
+    height: 400px; width: 100%;
 }
 .main-page #article .slide-box {
-    /* width: 100%; height: 768px;
-    overflow: hidden; */
-}
+    /* width: 100%; */
+}   
 .main-page #article .slide {
     height: 400px; width: 100%;
     background-position: center;
