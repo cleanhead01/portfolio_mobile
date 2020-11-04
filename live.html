@@ -98,6 +98,9 @@
                                 <p>457</p>
                                 <span>사망자</span>
                             </div>
+                            <div class="canvas">
+                                <canvas id="line-chart-korea" width="10vw" height="5vh"></canvas>
+                            </div>
                         </div>
                         <div class="world-live-number">
                             <div>
@@ -115,9 +118,11 @@
                                 <p>219</p>
                                 <span>발생국가ㆍ영토</span>
                             </div>
+                            <div class="canvas-box">
+                                <canvas id="line-chart-world" width="10vw" height="5vh"></canvas>
+                            </div>
                         </div>
                     </div>
-                    <div class="canvas"><canvas id="line-chart" width="10vw" height="5vh"></canvas></div>
                 </article>
             </section>
         </div>
@@ -167,50 +172,71 @@
 
 
 
-    <script>
-        (function($){
+<script>
+    (function($){
             
-           var myChart = $('#line-chart');
-           var myLineChart = new Chart(myChart, {
-               type : 'line',
-               data : {
-                   labels : [
-                    '10.15(일)', '10.16(월)', '10.17(화)', '10.18(수)', '10.19(목)', '10.20(금)', '10.21(토)', '10.22(일)', '10.23(월)', '10.24(화)'
-                   ],
-                   datasets : [{
-                    label : '국내발생',
-                    data : [138,152,98,82,110,76,99,155,77,61],
-                    backgroundColor : 'rgba(144,238,144,0.3)',
-                    borderColor : 'rgba(144,238,144,1)',
-                    borderWidth : 2,
-                    pointRadius : 3,
-                    pointHoverRadius : 5,
-                    pointBorderColor : 'green',
-                    pointBackgroundColor : 'green',
-                   },
-                   {
-                    label : '해외유입',
-                    data : [20,13,5,8,22,16,1,30,12,6],
-                    backgroundColor : 'rgba(0,0,255,0.3)',
-                    borderColor : 'rgba(0,0,255,1)',
-                    borderWidth : 2,
-                    pointRadius : 3,
-                    pointHoverRadius : 5,
-                    pointBorderColor : 'blue',
-                    pointBackgroundColor : 'blue',
-                   }
-                ]
-               }
-           });
+            var myChartK = $('#line-chart-korea');
+            var myChartW = $('#line-chart-world');
+            var myLineChart = new Chart(myChartK, {
+                type : 'line',
+                data : {
+                    labels : [
+                        '10.18(수)', '10.19(목)', '10.20(금)', '10.21(토)', '10.22(일)', '10.23(월)', '10.24(화)'
+                    ],
+                    datasets : [{
+                        label : '국내발생',
+                        data : [82,110,76,99,155,77,61],
+                        backgroundColor : 'rgba(144,238,144,0.3)',
+                        borderColor : 'rgba(144,238,144,1)',
+                        borderWidth : 2,
+                        pointRadius : 3,
+                        pointHoverRadius : 5,
+                        pointBorderColor : 'green',
+                        pointBackgroundColor : 'green',
+                    },
+                    {
+                        label : '해외유입',
+                        data : [8,22,16,1,30,12,6],
+                        backgroundColor : 'rgba(0,0,255,0.3)',
+                        borderColor : 'rgba(0,0,255,1)',
+                        borderWidth : 2,
+                        pointRadius : 3,
+                        pointHoverRadius : 5,
+                        pointBorderColor : 'blue',
+                        pointBackgroundColor : 'blue',
+                    }
+                    ]
+                }
+            });
+
+            var myLineChart = new Chart(myChartW, {
+                type : 'line',
+                data : {
+                    labels : [
+                        '3.22(일)', '5.13(수)', '7.4(토)', '8.25(화)', '10.17(토)'
+                    ],
+                    datasets : [{
+                        label : '일일발생',
+                        data : [26.064,81.576,212.319,206.382,432.009],
+                        backgroundColor : 'rgba(144,238,144,0.3)',
+                        borderColor : 'rgba(144,238,144,1)',
+                        borderWidth : 2,
+                        pointRadius : 3,
+                        pointHoverRadius : 5,
+                        pointBorderColor : 'green',
+                        pointBackgroundColor : 'green',
+                    }]
+                }
+            });
             
           
           
           
           
-        })(jQuery)
+    })(jQuery)
         
         
-    </script>
+</script>
 
     <script src="js/index.js"></script>
 
