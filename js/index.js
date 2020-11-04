@@ -72,6 +72,12 @@
 
     $('.main-title i').on('click', function(){
         $(this).parent('.main-title').next().stop().slideToggle(300)
+        
+        // if ($(this).parent('.main-title').hasClass('on')) {
+        //     $(this).removeClass('on')
+        // } else if (!$(this).parent('.main-title').hasClass('on')) {
+        //     $(this).addClass('on')
+        // }    잠시 보류 이거는 화살표 누르면 슬라이드 되면서 메인 바의 클래스 on이 붙는 효과인데 잘 안되는 중
 
         if ($(this).hasClass('fa-angle-down')) {
             $(this).removeClass('fa-angle-down').addClass('fa-angle-up')    
@@ -83,6 +89,7 @@
             if ( $(this).css('display') === 'block' ) {
                 $(this).slideUp(300)
                 $(this).prev().find('i').removeClass('fa-angle-up').addClass('fa-angle-down')
+                // $(this).addClass('on').siblings().removeClass('on')
             }
         })
         return false

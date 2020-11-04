@@ -197,6 +197,9 @@
 
 
 /* 메인페이지 텍스트 구역 시작------------------------------------------------------------------------------ */
+.main-page {
+    background: #eee;
+}
 .main-page #article .main-txt-box {
     padding: 20px 0px 30px;
 }
@@ -207,20 +210,30 @@
 }
 /* 메인페이지 제목----------------------------------------------------------------------------------------- */
 .main-page #article .main-txt-box .main-txt .main-title {
-    padding: 10px; margin-top: 10px;
+    padding: 10px 10px 10px 20px; margin-top: 10px;
     border: 1px solid #bbb; border-radius: 20px;
-    font-size: 20px;
+    background: #fff;
+}
+.main-page #article .main-txt-box .main-txt .main-title.on {
+    background: #555;
+    color: #fff;
+}
+.main-page #article .main-txt-box .main-txt .main-title.on h3 {
+    color: #555;
 }
 /* 제목 */
 .main-page #article .main-txt-box .main-txt .main-title h3 {
     display: inline-block;
     width: 90%;
+    color: #555;
+    font-weight: bold;
 }
 /* 오른쪽 화살표 */
 .main-page #article .main-txt-box .main-txt .main-title i {
     display: inline-block;
     padding-left: 10px;
     cursor: pointer;
+    font-size: 25px;
 }
 
 /* 메인페이지 내용---------------------------------------------------------------------------------------- */
@@ -230,6 +243,7 @@
     border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
     font-size: 20px;
     width: 95%;
+    background: #fff;
 }
 /* 내용의 제목 */
 .main-page #article .main-txt-box .main-txt .main-content h3 {
