@@ -35,10 +35,6 @@
     font-size: 25px;
     /* margin-top: 20px; */
 }
-/* 로고 */
-#header h1 {
-    font-size: 50px;
-}
 /* 클릭하면 나오는 메뉴------------------------------------------------------------------------------------- */
 .click-menu-box {
     position: fixed; top: 0px; left: -100%; bottom: 0px;
@@ -61,7 +57,7 @@
 }
 /* 슬로건 구역 */
 .click-menu-box .click-menu-txt h2 {
-    font-size: 40px; font-family: 'BMEULJIRO'; font-weight: normal;
+    font-size: 30px; font-family: 'BMEULJIRO'; font-weight: normal;
     /* padding: 20px 0px 10px 20px; */
     color: blue;
 }
@@ -83,18 +79,17 @@
 /* 석지훈님안녕하세요 박스 */
 .click-menu-box .click-menu-txt p {
     /* padding: 10px 20px 0px; */
-    font-size: 20px;
     flex: 9;
 }
 .click-menu-box .click-menu-txt p span {
-    font-size: 25px;
-    /* font-weight: bold; */
-    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
 }
 /* 클릭메뉴의 내용------------------------------------------------------------------------------------------- */
 .click-menu-box .click-menu-nav {
     height: 80%;
-    background: #fff;
+    background: #eee;
 }
 .click-menu-box .click-menu-nav ul {
     height: 100%;
@@ -105,9 +100,9 @@
 }
 .click-menu-box .click-menu-nav ul li {
     /* text-align: center; */
-    width: 60%; height: 80%;
+    width: 90%; height: 80%;
     font-size: 20px; font-weight: bold;
-    border: 10px solid black; border-radius: 20px;
+    border: 10px solid #ddd; border-radius: 20px;
     background: #fff;
     position: relative;
 }
@@ -116,6 +111,7 @@
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
+    color: #555;
 }
 .click-menu-box .click-menu-bottom {
     height: 5%;
