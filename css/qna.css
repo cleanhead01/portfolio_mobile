@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+
+
+
+
+
+
+
+
+
+.qna-page #article {
+    padding: 0px 0px 20px;
+}
+/* 상단 뒤로가기 메뉴랑 페이지 제목 */
+.qna-page #article .top-bar {
+    background: #eee; color: #000;
+    width: 100%;
+    margin-bottom: 20px; padding: 10px 0px;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+}
+.qna-page #article .top-bar div {
+    display: inline-block;
+    position: absolute; left: 20px;
+}
+.qna-page #article .top-bar h2 {
+    display: inline-block;
+}
+
+
+
+
+.qna-box {
+    padding: 10px 0px; margin: 20px 10px;
+    border: 1px solid #aaa; border-radius: 10px;
+}
+
+
+
+
+.qna-box h2 {
+    text-align: center;
+}
+/* 질문구역------------------------------------------------------------------------------- */
+/* 질문박스 */
+.qna-box .qna-title {
+    border-top: 1px solid #ccc;
+    padding: 10px 0px 10px 10px;
+    position: relative;
+}
+/* 질문의 제목 */
+.qna-box .qna-title h3 {
+
+}
+/* 질문의 화살표 */
+.qna-box .qna-title i {
+    position: absolute; right: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.qna-box .qna-content {
+    padding: 10px;
+    /* display: none; */
+}
