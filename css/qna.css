@@ -42,6 +42,11 @@
 
 .qna-box h2 {
     text-align: center;
+    padding: 5px 0px 10px;
+    font-size: 20px;
+}
+.qna-box h2 i {
+    color: skyblue;
 }
 /* 질문구역------------------------------------------------------------------------------- */
 /* 질문박스 */

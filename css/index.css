@@ -101,7 +101,7 @@
 }
 .click-menu-box .click-menu-nav ul li {
     /* text-align: center; */
-    width: 90%; height: 80%;
+    width: 90%; height: 80%; max-width: 200px;
     font-size: 16px; font-weight: bold;
     border: 10px solid #ddd; border-radius: 20px;
     background: #fff;
@@ -218,6 +218,7 @@
     padding: 10px 10px 10px 20px; margin-top: 10px;
     border: 1px solid #bbb; border-radius: 20px;
     background: #fff;
+    position: relative;
 }
 .main-page #article .main-txt-box .main-txt .main-title.on h3 {
     color: #fff;
@@ -230,11 +231,12 @@
     font-weight: bold;
 }
 /* 오른쪽 화살표 */
+
 .main-page #article .main-txt-box .main-txt .main-title i {
-    display: inline-block;
     padding-left: 10px;
     cursor: pointer;
     font-size: 25px; color: #000;
+    position: absolute; right: 20px;
 }
 
 /* 메인페이지 내용---------------------------------------------------------------------------------------- */
