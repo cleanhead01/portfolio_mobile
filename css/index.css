@@ -52,17 +52,28 @@
 .click-menu-box .click-menu-txt {
     border-bottom: 1px solid #ccc;
     background: #eee;
-    height: 80px;
-    padding: 10px 0px 0px 10px;
+    height: 100px;
+    padding: 25px 0px 0px 10px;
 }
 /* 슬로건 구역 */
 .click-menu-box .click-menu-txt h2 {
-    font-size: 20px; font-family: 'BMEULJIRO'; font-weight: normal;
+    font-size: 21px; font-family: 'BMEULJIRO'; font-weight: normal;
     /* padding: 20px 0px 10px 20px; */
     color: blue;
 }
 .click-menu-box .click-menu-txt h2 span {
     color: #f00;
+}
+/* 석지훈님안녕하세요 박스 */
+.click-menu-box .click-menu-txt p {
+    /* padding: 10px 20px 0px; */
+    flex: 9;
+    font-size: 16px;
+}
+.click-menu-box .click-menu-txt p span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
 }
 /* 로고박스 */
 .click-menu-box .click-menu-txt .click-txt-top {
@@ -74,18 +85,7 @@
 .click-menu-box .click-menu-txt .click-txt-top a {
     flex: 0.5;
     padding: 0px 5px;
-    font-size: 16px;
-}
-/* 석지훈님안녕하세요 박스 */
-.click-menu-box .click-menu-txt p {
-    /* padding: 10px 20px 0px; */
-    flex: 9;
-    font-size: 13px;
-}
-.click-menu-box .click-menu-txt p span {
-    font-size: 16px;
-    font-weight: bold;
-    color: #000;
+    font-size: 18px;
 }
 /* 클릭메뉴의 내용------------------------------------------------------------------------------------------- */
 .click-menu-box .click-menu-nav {
@@ -98,10 +98,12 @@
     grid-template-columns: 50% 50%;
     /* border-bottom: 1px solid #ccc; */
     place-items: center center;
+    padding: 10px 0px;
 }
 .click-menu-box .click-menu-nav ul li {
     /* text-align: center; */
     width: 90%; height: 80%; max-width: 200px;
+    margin-bottom: 10px;
     font-size: 16px; font-weight: bold;
     border: 10px solid #ddd; border-radius: 20px;
     background: #fff;
@@ -114,9 +116,10 @@
     text-align: center;
     color: #555;
 }
+/* 맨 밑에 로그아웃 구역 */
 .click-menu-box .click-menu-bottom {
     height: 40px; width: 100%;
-    font-size: 13px; font-weight: bold;
+    font-size: 16px; font-weight: bold;
     padding-left: 20px;
     background: #333; color: #fff;
     position: absolute; bottom: 0px;
@@ -126,7 +129,7 @@
     transform: translateY(-50%);
 }
 .click-menu-box .click-menu-bottom i {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0px 10px;
 }
 
@@ -166,6 +169,7 @@
 
 
 /* 메인페이지 슬라이드 구역-------------------------------------------------------------------------------- */
+/* 반응형을 위해서 백그라운드 이미지가 아닌 html에 직접 넣어버림 */
 .main-page #article .slide-outer {
     /* height: 400px; */
 }
