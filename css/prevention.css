@@ -19,7 +19,7 @@
     margin-bottom: 20px; padding: 10px 0px;
     text-align: center;
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
 }
 .prevention-page #article .top-bar div {
     display: inline-block;
@@ -37,8 +37,8 @@
     border-radius: 20px;
 }
 .people h2 {
-    /* text-align: center; */
-    font-size: 30px;
+    text-align: center;
+    font-size: 25px;
     /* color: #fff; */
     padding: 0px 0px 5px 10px;
 }
@@ -46,6 +46,7 @@
     font-size: 15px;
     /* color: #fff; */
     padding: 0px 0px 30px 10px;
+    text-align: center;
 }
 .people .people-box {
     /* display: flex; */
@@ -53,24 +54,31 @@
     /* place-items: center center; */
 }
 .people .people-box > div {
-    display: inline-block;
-    width: 49%;
+    /* display: inline-block; */
+    width: 100%;
     vertical-align: middle;
 }
-.people .people-box .people-img {
-    text-align: center;
+.people .people-box .people-img > div {
+    width: 200px;
+    margin: 0px auto 15px;
 }
 .people .people-box .people-img img {
+    width: 100%;
     border-radius: 50%;
-    width: 200px;
+}
+.people .people-txt {
+    text-align: center;
 }
 .people .people-txt ul {
     list-style: disc;    
+    padding-left: 30px;
+    display: inline-block;
 }
 .people .people-txt li {
     font-size: 15px; font-weight: bold;
-    padding-bottom: 10px;
+    padding: 10px 0px 0px 0px;
     /* color: #0ff; */
+    text-align: left;
 }
 /* 유상증상자 예방수칙 */
 .similar {
@@ -81,8 +89,8 @@
     border-radius: 20px;
 }
 .similar h2 {
-    /* text-align: center; */
-    font-size: 30px;
+    text-align: center;
+    font-size: 25px;
     /* color: #fff; */
     padding: 0px 0px 5px 10px;
 }
@@ -90,6 +98,7 @@
     font-size: 15px;
     /* color: #fff; */
     padding: 0px 0px 30px 10px;
+    text-align: center;
 }
 .similar .similar-box {
     /* display: flex; */
@@ -97,22 +106,29 @@
     /* place-items: center center; */
 }
 .similar .similar-box > div {
-    display: inline-block;
-    width: 49%;
+    /* display: inline-block; */
+    width: 100%;
     vertical-align: middle;
 }
-.similar .similar-box .similar-img {
-    text-align: center;
+.similar .similar-box .similar-img > div {
+    width: 200px;
+    margin: 0px auto 15px;
 }
 .similar .similar-box .similar-img img {
+    width: 100%;
     border-radius: 50%;
-    width: 200px; height: 200px;
+}
+.similar .similar-txt {
+    text-align: center;
 }
 .similar .similar-txt ul {
-    list-style: disc;
+    list-style: disc;    
+    padding-left: 30px;
+    display: inline-block;
 }
 .similar .similar-txt li {
     font-size: 15px; font-weight: bold;
-    padding-bottom: 10px;
+    padding: 10px 0px 0px 0px;
     /* color: #0ff; */
+    text-align: left;
 }

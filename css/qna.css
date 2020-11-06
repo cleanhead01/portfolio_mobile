@@ -19,7 +19,7 @@
     margin-bottom: 20px; padding: 10px 0px;
     text-align: center;
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
 }
 .qna-page #article .top-bar div {
     display: inline-block;
@@ -53,21 +53,27 @@
 .qna-box .qna-title {
     border-top: 1px solid #ccc;
     padding: 10px 0px 10px 10px;
-    position: relative;
+    /* position: relative; */
+    font-size: 15px;
 }
 /* 질문의 제목 */
 .qna-box .qna-title h3 {
-
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
 }
 /* 질문의 화살표 */
 .qna-box .qna-title i {
-    position: absolute; right: 20px;
+    /* position: absolute; right: 20px; */
     cursor: pointer;
     font-size: 20px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 
 .qna-box .qna-content {
     padding: 10px;
     /* display: none; */
+    font-size: 13px;
 }

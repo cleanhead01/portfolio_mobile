@@ -39,7 +39,7 @@
 .click-menu-box {
     position: fixed; top: 0px; left: -100%; bottom: 0px;
     width: 100%;
-    background : #eee;
+    background : #fff;
     z-index: 999;
     /* 바텀메뉴도 fixed인데 z-index: 99값임 */
     /* display: none; */
@@ -51,7 +51,7 @@
 /* 클릭메뉴 탑 텍스트 */
 .click-menu-box .click-menu-txt {
     border-bottom: 1px solid #ccc;
-    background: #fff;
+    background: #eee;
     height: 80px;
     padding: 10px 0px 0px 10px;
 }
@@ -90,7 +90,7 @@
 /* 클릭메뉴의 내용------------------------------------------------------------------------------------------- */
 .click-menu-box .click-menu-nav {
     height: 75%;
-    background: #eee;
+    background: #fff;
 }
 .click-menu-box .click-menu-nav ul {
     height: 100%;
@@ -141,12 +141,13 @@
 .main-page .main-noti {
     position: relative;
     height: 50px; line-height: 50px;
-    background: #3b1dcd; color: #fff;
+    background: royalblue; color: #fff;
     overflow: hidden;
 }
 .main-page .main-noti::before {
     content: "\f12a"; font-family: 'Font Awesome 5 Free'; font-weight: 900 !important;
     padding-left: 20px;
+    color: red;
     position: absolute; left: 0px;
     font-size: 20px;
 }
@@ -154,6 +155,8 @@
     display: block;
     font-weight: bold;
     padding-left: 40px;
+    white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
+    /* 320px로 가면 내용이 밑으로 떨어지면서 오류가 발생 하는걸 막음 */
 }
 
 
@@ -164,28 +167,32 @@
 
 /* 메인페이지 슬라이드 구역-------------------------------------------------------------------------------- */
 .main-page #article .slide-outer {
-    height: 400px; width: 100%;
+    /* height: 400px; */
 }
 .main-page #article .slide-box {
     /* width: 100%; */
 }   
 .main-page #article .slide {
-    height: 400px; width: 100%;
+    /* height: 400px;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    width: 100%;
+}
+.main-page #article .slide img {
+    width: 100%;
 }
 .main-page #article .slide1 {
-    background: url(../images/slide1.jpg);
+    /* background: url(../images/slide1.jpg); */
 }
 .main-page #article .slide2 {
-    background: url(../images/slide2.jpg);
+    /* background: url(../images/slide2.jpg); */
 }
 .main-page #article .slide3 {
-    background: url(../images/slide3.jpg);
+    /* background: url(../images/slide3.jpg); */
 }
 .main-page #article .slide4 {
-    background: url(../images/slide4.jpg);
+    /* background: url(../images/slide4.jpg); */
 }
 
 
@@ -288,7 +295,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; top: 90%; bottom: 0px;
+    position: fixed; bottom: 0px;
     width: 100%; max-width: 768px; min-height: 92px;
     padding: 0px 20px;
     background: #fff; color: darkslategrey;

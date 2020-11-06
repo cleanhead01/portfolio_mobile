@@ -13,12 +13,12 @@
 }
 /* 상단 뒤로가기 메뉴랑 페이지 제목 */
 .weather-page #article .top-bar {
-    background: rgba(255, 150, 255, 1); color: #fff;
+    background: rgba(255, 150, 255, 0.5); color: #fff;
     width: 100%;
     margin-bottom: 20px; padding: 10px 0px;
     text-align: center;
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
 }
 .weather-page #article .top-bar div {
     display: inline-block;
@@ -104,7 +104,7 @@
 .weather-box ul {
     display: grid;
     grid-template-columns: 11.66% 17.66% 17.66% 17.66% 17.66% 17.66%;
-    /* grid-template-rows: 33.33% 33.33% 33.33%; */
+    grid-template-rows: 33.33% 33.33% 33.33%;
     color: #fff;
     font-size: 20px;
     border-top: 1px solid #fff; border-bottom: 1px solid #fff;
@@ -116,6 +116,10 @@
 .weather-box li:nth-child(1),
 .weather-box li:nth-child(4) {
     font-weight: bold;
+}
+.weather-box li:nth-child(1) P {
+    font-size: 15px;
+    margin-top: 5px;
 }
 .weather-box li p {
     /* border-bottom: 1px solid #fff; */
