@@ -143,7 +143,7 @@
 /* 한줄광고----------------------------------------------------------------------------------------- */
 .main-page .main-noti {
     position: relative;
-    height: 50px; line-height: 50px;
+    height: 40px; line-height: 40px;
     background: royalblue; color: #fff;
     overflow: hidden;
 }
@@ -156,7 +156,7 @@
 }
 .main-page .main-noti a {
     display: block;
-    font-weight: bold;
+    font-weight: bold; font-size: 13px;
     padding-left: 40px;
     white-space: nowrap; text-overflow: ellipsis; overflow: hidden;
     /* 320px로 가면 내용이 밑으로 떨어지면서 오류가 발생 하는걸 막음 */
@@ -221,8 +221,8 @@
 }
 .main-page #article .main-txt-box > h2 {
     text-align: center;
-    font-size: 30px;
-    padding: 20px 0px 50px;
+    font-size: 25px;
+    padding: 15px 0px 20px;
 }
 /* 메인페이지 제목----------------------------------------------------------------------------------------- */
 .main-page #article .main-txt-box .main-txt .main-title {
@@ -300,7 +300,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed; bottom: 0px;
-    width: 100%; max-width: 768px; min-height: 92px;
+    width: 100%; max-width: 768px; min-height: 50px;
     padding: 0px 20px;
     background: #fff; color: darkslategrey;
     z-index: 99;
@@ -309,7 +309,7 @@
 }
 /* 아이콘 */
 #aside > div i {
-    font-size: 30px;
+    font-size: 25px;
     /* margin-top: 15px; */
 }
 
@@ -326,7 +326,7 @@
 /* 푸터------------------------------------------------------------------------------------------------- */
 #footer {
     text-align: center;
-    margin-bottom: 92px;
+    margin-bottom: 50px;
 }
 /* 개인정보 구역 */
 #footer .privacy {
@@ -365,16 +365,43 @@
 
 
 
-#onlyMobile {
+#only-mobile {
     position:fixed; top: 0px; left: 0px; right: 0px; bottom: 0px;
     z-index:9999999999;
-    background:#4ab8bc;
-    font-size:30px; 
-    display:flex;
-    justify-content: center; align-items:center;
+    background: #fff;
+    font-size:30px; font-weight: bold;
+    text-align: center;
+}
+#only-mobile .only-mobile-img  {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+#only-mobile .only-mobile-img img:nth-child(1) {
+    animation: virus 0.5s infinite linear;
+}
+#only-mobile .only-mobile-img img:nth-child(2) {
+    animation: virus 1s infinite linear;
+}
+#only-mobile .only-mobile-img img:nth-child(3) {
+    animation: virus 2s infinite linear;
+}
+#only-mobile .only-mobile-img img:nth-child(4) {
+    animation: virus 0.8s infinite linear;
+}
+#only-mobile .only-mobile-img img:nth-child(5) {
+    animation: virus 1s infinite linear;
+}
+#only-mobile h2 {
+    position: relative; top: 60%; left: 60%;
+    transform: translate(-60%, -60%);
+}
+#only-mobile h2 span {
+    color: #555;
+    font-size: 20px;
 }
 @media screen and (max-width:768px ) {
-    #onlyMobile {
+    #only-mobile {
         display:none;
     }   
 }
