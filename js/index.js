@@ -2,7 +2,7 @@
 
 
     // 사이드메뉴와 클릭메뉴의 로드메서드를 넣지만 확진자 현황은 새로운 html이 열려야 해서 따로 지목을 한다.
-    $('#aside > div > a, .click-menu-box .click-menu-nav li > a').on('click', function(){
+    $('#aside > div > a, .click-menu-box .click-menu-nav li > a, .main-txt-box .main-content > a').on('click', function(){
         // e.preventDefault()
         var url = $(this).attr('href')
         $('#container-box > .container').remove()

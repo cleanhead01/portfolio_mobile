@@ -254,7 +254,7 @@
 
 /* 메인페이지 내용---------------------------------------------------------------------------------------- */
 .main-page #article .main-txt-box .main-txt .main-content {
-    padding: 10px 10px 10px 20px; margin: 0px auto;
+    padding: 15px 10px 15px 20px; margin: 0px auto;
     border: 1px solid #bbb; border-top: none;
     border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
     font-size: 20px;
@@ -262,25 +262,47 @@
     background: #fff;
 }
 /* 내용의 제목 */
-.main-page #article .main-txt-box .main-txt .main-content h3 {
+/* .main-page #article .main-txt-box .main-txt .main-content h3 {
     display: inline-block;
     width: 90%;
-}
-/* 오른쪽 더보기 아이콘 */
-.main-page #article .main-txt-box .main-txt .main-content a {
-    display: inline-block;
-    padding-left: 0px;
-    color: #555;
-}
+} */
 /* 내용의 이미지 */
 .main-page #article .main-txt-box .main-txt .main-content img {
     width: 150px; 
     border-radius: 50%;
 }
 /* 내용박스 안에 내용 */
+.main-page #article .main-txt-box .main-txt .main-content ul {
+    display: inline-block;
+    width: 90%;
+    list-style: disc;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.main-page #article .main-txt-box .main-txt .main-content li {
+    font-size: 13px;
+}
 .main-page #article .main-txt-box .main-txt .main-content p {
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: top;
+    width: 90%;
+}
+/* 오른쪽 더보기 아이콘 */
+.main-page #article .main-txt-box .main-txt .main-content a {
+    display: inline-block;
+    text-align: center;
+    margin-top: -9px;
+    color: #555;
+    vertical-align: top;
+}
+.main-page #article .main-txt-box .main-txt .main-content div {
     display: inline-block;
 }
+.main-page #article .main-txt-box .main-txt .main-content p + div > a {
+    margin-left: 20px;
+}
+
 
 
 
