@@ -57,12 +57,13 @@
 }
 /* 슬로건 구역 */
 .click-menu-box .click-menu-txt h2 {
-    font-size: 21px; font-family: 'BMEULJIRO'; font-weight: normal;
+    font-size: 30px; font-family: 'BMEULJIRO'; font-weight: normal;
     /* padding: 20px 0px 10px 20px; */
     color: blue;
 }
 .click-menu-box .click-menu-txt h2 span {
-    color: #f00;
+    color: #f00; 
+    font-family: 'BMEULJIRO'; font-weight: normal;
 }
 /* 석지훈님안녕하세요 박스 */
 .click-menu-box .click-menu-txt p {
@@ -71,7 +72,7 @@
     font-size: 16px;
 }
 .click-menu-box .click-menu-txt p span {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #000;
 }
@@ -85,7 +86,34 @@
 .click-menu-box .click-menu-txt .click-txt-top a {
     flex: 0.5;
     padding: 0px 5px;
-    font-size: 18px;
+    font-size: 20px;
+}
+@media screen and (max-width:460px) {
+
+    /* 슬로건 구역 */
+    .click-menu-box .click-menu-txt h2 {
+        font-size: 20px; font-family: 'BMEULJIRO'; font-weight: normal;
+        /* padding: 20px 0px 10px 20px; */
+        color: blue;
+    }
+    /* 석지훈님안녕하세요 박스 */
+    .click-menu-box .click-menu-txt p {
+        /* padding: 10px 20px 0px; */
+        flex: 9;
+        font-size: 13px;
+    }
+    .click-menu-box .click-menu-txt p span {
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
+    }
+    /* 로고박스 */
+    .click-menu-box .click-menu-txt .click-txt-top a {
+        flex: 0.5;
+        padding: 0px 5px;
+        font-size: 18px;
+    }
+
 }
 /* 클릭메뉴의 내용------------------------------------------------------------------------------------------- */
 .click-menu-box .click-menu-nav {
@@ -116,7 +144,7 @@
 .click-menu-box .click-menu-nav ul li a i {
     display: block;
     font-size: 35px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 /* 맨 밑에 로그아웃 구역 */
 .click-menu-box .click-menu-bottom {
@@ -171,37 +199,13 @@
 
 
 /* 메인페이지 슬라이드 구역-------------------------------------------------------------------------------- */
-/* 반응형을 위해서 백그라운드 이미지가 아닌 html에 직접 넣어버림 */
-.main-page #article .slide-outer {
-    /* height: 400px; */
-}
-.main-page #article .slide-box {
-    /* width: 100%; */
-}   
+/* 반응형을 위해서 백그라운드 이미지가 아닌 html에 직접 넣어버림 */ 
 .main-page #article .slide {
-    /* height: 400px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; */
     width: 100%;
 }
 .main-page #article .slide img {
     width: 100%;
 }
-.main-page #article .slide1 {
-    /* background: url(../images/slide1.jpg); */
-}
-.main-page #article .slide2 {
-    /* background: url(../images/slide2.jpg); */
-}
-.main-page #article .slide3 {
-    /* background: url(../images/slide3.jpg); */
-}
-.main-page #article .slide4 {
-    /* background: url(../images/slide4.jpg); */
-}
-
-
 
 
 
@@ -257,9 +261,9 @@
     padding: 15px 10px 15px 20px; margin: 0px auto;
     border: 1px solid #bbb; border-top: none;
     border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-    font-size: 20px;
+    font-size: 20px; font-weight: bold;
     width: 95%;
-    background: #fff;
+    background: #fff; color: #333;
 }
 /* 내용의 제목 */
 /* .main-page #article .main-txt-box .main-txt .main-content h3 {
@@ -274,24 +278,23 @@
 /* 내용박스 안에 내용 */
 .main-page #article .main-txt-box .main-txt .main-content ul {
     display: inline-block;
-    width: 90%;
+    width: 80%;
     list-style: disc;
     vertical-align: top;
     margin-left: 20px;
 }
 .main-page #article .main-txt-box .main-txt .main-content li {
-    font-size: 13px;
+    font-size: 14px;
 }
 .main-page #article .main-txt-box .main-txt .main-content p {
-    font-size: 13px;
+    font-size: 14px;
     display: inline-block;
     vertical-align: top;
-    width: 90%;
+    width: 80%;
 }
 /* 오른쪽 더보기 아이콘 */
 .main-page #article .main-txt-box .main-txt .main-content a {
     display: inline-block;
-    text-align: center;
     margin-top: -9px;
     color: #555;
     vertical-align: top;
