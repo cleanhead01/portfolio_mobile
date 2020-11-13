@@ -10,6 +10,25 @@
         return false
     })
 
+
+    // 상단 헤더에 돋보기 버튼 누르면 나오는 검색구역
+    $('#header .search-box').on('click', function(){
+        $(this).nextAll('.click-search-box').addClass('on')
+        $(this).nextAll('.click-search-box').animate({
+            left : "0%"
+        }, 500)
+        return false
+    })
+    // 검색구역의 close 버튼 누르면 사라지는 검색구역
+    $('#header .click-search-box .search-close i').on('click', function(){
+        $(this).parents('.click-search-box').animate({
+            left : "-100%"
+        }, 500, function(){
+            $(this).parents('.click-search-box').removeClass('on')
+        })
+        return false
+    })
+
     
     // 하단 메뉴의 햄버거 버튼 누르면 좌측에서 메뉴창 열리기
     $('#aside #menu-box a').on('click', function(){

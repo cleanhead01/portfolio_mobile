@@ -1,17 +1,19 @@
 @charset "utf-8";
 
 
-/* 메뉴 클릭하면 나와라! */
-@keyframes menu {
-
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
-
-
+/* 헤더에 알람설정 아이콘 */
+@keyframes alarm {
+    0% {transform: translate(-1px); color: blue;}
+    10% {transform: translate(1px);}
+    20% {transform: translate(-1px);}
+    30% {transform: translate(1px);}
+    40% {transform: translate(-1px);}
+    50% {transform: translate(1px);}
+    60% {transform: translate(-1px);}
+    70% {transform: translate(1px);}
+    80% {transform: translate(-1px);}
+    90% {transform: translate(1px); color: blue;}
+    100% {transform: translate(-1px); color: darkslategrey;}
 }
 /* 일기예보 페이지 구름1 */
 @keyframes weather1 {

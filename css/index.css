@@ -35,6 +35,51 @@
     font-size: 25px;
     /* margin-top: 20px; */
 }
+/* 돋보기 클릭하면 나오는 검색박스-------------------------------------------------------------------------- */
+.click-search-box {
+    position: fixed; top: 0px; left: -100%; bottom: 0px;
+    width: 100%;
+    background: slateblue;
+    z-index: 999;
+    display: none;
+}
+.click-search-box.on {
+    display: block;
+}
+.click-search-box .click-search-form {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.click-search-box .click-search-form form {
+    width: 310px;
+    margin-bottom: 30px;
+}
+/* 글상자 */
+.click-search-box .click-search-form form input {
+    width: 250px; height: 50px;
+    border-radius: 5px; 
+    padding-left: 10px;
+    font-size: 16px;
+}
+/* 검색버튼 */
+.click-search-box .click-search-form form button {
+    width: 50px; height: 50px;
+    border-radius: 5px;
+    font-size: 16px; font-weight: bold;
+}
+/* 검색박스 클로즈 버튼 */
+.click-search-box .click-search-form .search-close {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+.click-search-box .click-search-form .search-close i {
+    cursor: pointer;
+}
+/* 알람 아이콘 박스-------------------------------------------------------------------------------------- */
+.alarm-box i:hover {
+    animation: alarm 1s both linear;
+}
 /* 클릭하면 나오는 메뉴------------------------------------------------------------------------------------- */
 .click-menu-box {
     position: fixed; top: 0px; left: -100%; bottom: 0px;
